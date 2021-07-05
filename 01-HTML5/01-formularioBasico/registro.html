@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ejemplo de HTML5">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO - CONTACTA.ME</title>
+</head>
+<body>
+<h1>REGISTRO - CONTACTA.ME</h1>
+<form action="registro.html" method="POST">
+
+    <label>Nombre: </label>
+    <input type="text" name="nombre_usuario" required><br><br>
+    <label>Apellido: </label>
+    <input type="text" name="apellido_usuario" required><br><br>
+    <label>Correo: </label>
+    <input type="email" name="email" required><br><br>
+    <label>Telefono: </label>
+    <input type="text" name="telefono" pattern="^((8|9)[0-9]{8})"><br><br>
+    <label>Contraseña (mínimo 8 caracteres): </label>
+    <input type="password" name="contraseña" minlength="8" required><br><br>
+    <label>Cargo: </label>
+    <select name="slctCargo" required><br><br>
+        <option value="" hidden></option>
+        <option value="1">Director</option>
+        <option value="2">Operador</option>
+        <option value="3">Supervisor</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Enviar">
+
+</form>
+</body>
+</html>
