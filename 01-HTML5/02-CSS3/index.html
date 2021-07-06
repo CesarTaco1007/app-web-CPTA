@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estudio de estilos aplicables al Borde</title>
+    <style>
+      #div-1{
+        width: 100px;
+        height: 20px;
+        border-color: #ff0000;
+        border-style: dotted;
+      }
+      #div-2{
+        width: 100px;
+        height: 20px;
+        border-color: #ff0000;
+        border-style: dashed;
+      }
+      #div-3{
+        width: 100px;
+        height: 20px;
+        border-color: #00ff00;
+        border-style: solid;
+      }
+      .div-4{
+        width: 100px;
+        height: 20px;
+        border-color: rgb(0,0,255);
+        border-style: solid;
+        border-width: 20px;
+      }
+      #div-5{
+        width: 100px;
+        height: 20px;
+        border: 20px solid rgb(0,0,255);
+      }
+      #div-6{
+        width: 100px;
+        height: 20px;
+        border-color: rgb(0,0,255);
+        border-style: solid;
+        border-width: 4px;
+        border-right-style: dotted;
+      }
+      #div-7{
+        width: 100px;
+        height: 20px;
+        border-radius: 20px;
+        border: 1px solid #FFFF00;
+      }
+      /* MODELO DE CAJA*/
+      /* SIN BOX-SIZING*/
+      #div-8{
+        width: 100px;
+        height: 100px;
+        background-color: lime;
+        border: 5px solid black;
+        padding: 20px;
+      }
+      /* CON BOX-SIZING*/
+      #div-9{
+        width: 100px;
+        height: 100px;
+        background-color: lime;
+        border: 5px solid black;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    </style>
+</head>
+<body>
+    <div id="div-1">1</div>
+    <div id="div-2">2</div>
+    <div id="div-3">3</div>
+    <div class="div-4">4</div>
+    <div id="div-5">5</div>
+    <div id="div-6">6</div>
+    <div id="div-7">7</div>
+    <div id="div-8">8</div>
+    <div ID="div-9">9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+
+</body>
+</html>
