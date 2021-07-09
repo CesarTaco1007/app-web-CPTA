@@ -1,0 +1,50 @@
+
+/*--------- SECCION 1 ---------------*/
+header{height:250px;border:1px solid #000000;background-image: url(../img/sombra_03.png);}
+#enlaces{ width:100%;height: 50px;text-align: center;}
+#enlaces ul{list-style-type: none; text-align: center;margin:0;padding-top:15px;}
+#enlaces li{display: inline-block;width:20%;}
+body{font-family:Arial, Helvetica, sans-serif;margin:auto;}
+.colorweb{ background: #0071bc;}
+a{color:white; text-decoration: none;}
+/*--------- SECCION 2 ---------------*/
+/* Generales */
+.flotar_iz{float:left}
+.flotar_der{float:right}
+/*LOGO*/
+@font-face{
+    font-family:pepito;
+    font-style:normal;
+    font-weight:normal;
+    src:url(../fonts/new_zelek_[allfont.es].ttf);
+}
+
+#logo{
+    height: 56px;
+    width:380px;
+    font-family: pepito;
+    color:white;
+    text-align: center;
+    padding: 12px 0 0 0;
+    margin:5px 5px 0 20px;
+    font-size: 30px;
+}
+/*texto buscar*/
+.input_buscar{
+    width:500px;
+    height:64px;
+    font-size:1.9rem;
+    background:#edeff1;
+    border: 1px solid #d4d7d9;
+    margin:5px 0 0 0;
+}
+/*Iconos*/
+.icono{ width:72px; height: 56px; padding-top: 10px;}
+.icono span{font-size:14px; display: block;}
+
+/*--------- SECCION 3 ---------------*/
+/** NAV **/
+nav{ clear:both; padding-top: 15px;}
+nav ul.menu{ list-style-type:none; text-align: center;}
+ul.menu li{ display: inline-block; width: 22%;}
+ul.menu li a{color:#666666;display: block;}
