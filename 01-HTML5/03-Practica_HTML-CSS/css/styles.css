@@ -1,6 +1,6 @@
 
 /*--------- SECCION 1 ---------------*/
-header{height:250px;border:1px solid #000000;background-image: url(../img/sombra_03.png);}
+header{height:200px;background-image: url(../img/sombra_03.png);}
 #enlaces{ width:100%;height: 50px;text-align: center;}
 #enlaces ul{list-style-type: none; text-align: center;margin:0;padding-top:15px;}
 #enlaces li{display: inline-block;width:20%;}
