@@ -19,6 +19,13 @@ a{color:white; text-decoration: none;}
     src:url(../fonts/new_zelek_[allfont.es].ttf);
 }
 
+@font-face{
+    font-family:juanito;
+    font-style:normal;
+    font-weight:normal;
+    src:url(../fonts/futura-normal_[allfont.es].ttf);
+}
+
 #logo{
     height: 56px;
     width:380px;
@@ -83,7 +90,7 @@ p{
 section {
     width: 1350px;
     height: 500px;
-    padding: 25px 75px;
+    padding: 20px 75px;
     margin-top: 0px;
     margin-left: 84px;
     text-align: center;
