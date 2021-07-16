@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Musicos SYSTEM "musicos-clasicos.dtd">
+<Musicos>
+    <musico id="1">
+        <nombre>Antonio</nombre>
+        <apellido>Vivaldi</apellido>
+        <obras>
+            <obra movimientos="4">Las Cuatro Estaciones</obra>
+            <obra movimientos="4">Gloria</obra>
+        </obras>
+        <localizacion>
+            <pais>Italia</pais>
+            <ciudad>Venecia</ciudad>
+        </localizacion>
+    </musico>
+    <musico id="2">
+        <nombre>Nicolo</nombre>
+        <apellido>Paganini</apellido>
+        <obras>
+            <obra movimientos="4">Campanella</obra>
+            <obra movimientos="4">24 caprichos</obra>
+        </obras>
+        <localizacion>
+            <pais>Italia</pais>
+            <ciudad>Génova</ciudad>
+        </localizacion>
+    </musico>
+    <musico id="3">
+        <nombre>Ludwing V.</nombre>
+        <apellido>Beethoven</apellido>
+        <obras>
+            <obra movimientos="3">Concierto para violín en RE mayor</obra>
+            <obra movimientos="1">Claro de Luna</obra>
+        </obras>
+        <localizacion>
+            <pais>Alemania</pais>
+            <ciudad>Bonn</ciudad>
+        </localizacion>
+    </musico>
+    <musico id="4">
+        <nombre>Wolfgang A.</nombre>
+        <apellido>Mozart</apellido>
+        <obras>
+            <obra movimientos="3">Sinfonía Nº 40</obra>
+            <obra movimientos="2">Opera Flauta Mágica</obra>
+        </obras>
+        <localizacion>
+            <pais>Viena</pais>
+            <ciudad>Salzburgo</ciudad>
+        </localizacion>
+    </musico>
+</Musicos>

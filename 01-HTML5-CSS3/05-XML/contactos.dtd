@@ -1,0 +1,28 @@
+<!DOCTYPE Contactos [
+        <!ELEMENT Contactos (contacto)*>
+        <!ELEMENT contacto (informacion-personal|empresa|telefono|localizacion|tonos)*>
+        <!ATTLIST contacto id CDATA #REQUIRED>
+        <!ELEMENT informacion-personal (fotografia|titulo|nombre|apellido|url-pagina-personal|fecha-cumpleaños)*>
+        <!ELEMENT fotografia (#PCDATA)>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT apellido (#PCDATA)>
+        <!ELEMENT url-pagina-personal (#PCDATA)>
+        <!ELEMENT fecha-cumpleaños (#PCDATA)>
+        <!ELEMENT empresa (nombreEmpresa|tipoEmpresa)*>
+        <!ELEMENT nombreEmpresa (#PCDATA)>
+        <!ELEMENT tipoEmpresa (#PCDATA)>
+        <!ELEMENT telefono (celular|casa|trabajo|principal|fax)*>
+        <!ELEMENT celular (#PCDATA)>
+        <!ELEMENT casa (#PCDATA)>
+        <!ELEMENT trabajo (#PCDATA)>
+        <!ELEMENT principal (#PCDATA)>
+        <!ELEMENT fax (#PCDATA)>
+        <!ELEMENT localizacion (pais|ciudad|geolocalizacion)*>
+        <!ELEMENT pais (#PCDATA)>
+        <!ELEMENT ciudad (#PCDATA)>
+        <!ELEMENT geolocalizacion (#PCDATA)>
+        <!ELEMENT tonos (mensaje|llamada)*>
+        <!ELEMENT mensaje (#PCDATA)>
+        <!ELEMENT llamada (#PCDATA)>
+        ]>

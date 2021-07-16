@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cine[
+        <!ELEMENT cine (directores,peliculas)>
+        <!ELEMENT directores (director*)>
+        <!ATTLIST directores id CDATA #REQUIRED>
+        <!ELEMENT director (#PCDATA)>
+        <!ELEMENT peliculas (pelicula*)>
+        <!ELEMENT pelicula (#PCDATA)>
+        ]>
+<cine>
+    <directores id="1">
+        <director>
+            Clint Eastwood
+        </director>
+        <director>
+            James Cameron
+        </director>
+    </directores>
+    <peliculas>
+        <pelicula>
+            Avatar
+        </pelicula>
+        <pelicula>
+            Mystic River
+        </pelicula>
+        <pelicula>
+            Titanic
+        </pelicula>
+    </peliculas>
+</cine>

@@ -1,0 +1,15 @@
+<!DOCTYPE Musicos [
+        <!ELEMENT Musicos (musico)*>
+        <!ELEMENT musico (nombre|apellido|obras|localizacion)*>
+        <!ATTLIST musico
+                id CDATA #REQUIRED>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT apellido (#PCDATA)>
+        <!ELEMENT obras (obra)*>
+        <!ELEMENT obra (#PCDATA)>
+        <!ATTLIST obra
+                movimientos CDATA #REQUIRED>
+        <!ELEMENT localizacion (pais|ciudad)*>
+        <!ELEMENT pais (#PCDATA)>
+        <!ELEMENT ciudad (#PCDATA)>
+        ]>
