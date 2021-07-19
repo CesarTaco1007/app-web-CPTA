@@ -12,7 +12,7 @@
     <xsd:element name="directores">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="director"/>
+                <xsd:element ref="director" maxOccurs="unbounded"/>
             </xsd:sequence>
             <xsd:attribute ref="id"/>
         </xsd:complexType>
@@ -21,7 +21,7 @@
     <xsd:element name="peliculas">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="pelicula"/>
+                <xsd:element ref="pelicula" maxOccurs="unbounded"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
