@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Contactos" type="ContactosType"/>
+  <xs:complexType name="informacion-personalType">
+    <xs:sequence>
+      <xs:element name="fotografia">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="foto1"/>
+            <xs:enumeration value="foto2"/>
+            <xs:enumeration value="foto3"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="titulo">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="titulo1"/>
+            <xs:enumeration value="titulo2"/>
+            <xs:enumeration value="titulo3"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="nombre">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Nombre1"/>
+            <xs:enumeration value="Nombre2"/>
+            <xs:enumeration value="Nombre3"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="apellido">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Apellido1"/>
+            <xs:enumeration value="Apellido2"/>
+            <xs:enumeration value="Apellido3"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="url-pagina-personal">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="URL1"/>
+            <xs:enumeration value="URL2"/>
+            <xs:enumeration value="URL3"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="fecha-cumpleaños">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Fecha1"/>
+            <xs:enumeration value="Fecha2"/>
+            <xs:enumeration value="Fecha3"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="empresaType">
+    <xs:sequence>
+      <xs:element name="nombreEmpresa">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Empresa1"/>
+            <xs:enumeration value="Empresa2"/>
+            <xs:enumeration value="Empresa3"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="tipoEmpresa">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Privada"/>
+            <xs:enumeration value="Publica"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="telefonoType">
+    <xs:sequence>
+      <xs:element name="celular">
+        <xs:simpleType>
+          <xs:restriction base="xs:int">
+            <xs:enumeration value="0995021739"/>
+            <xs:enumeration value="0991231739"/>
+            <xs:enumeration value="0991231456"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="casa">
+        <xs:simpleType>
+          <xs:restriction base="xs:int">
+            <xs:enumeration value="2810596"/>
+            <xs:enumeration value="2812596"/>
+            <xs:enumeration value="2812789"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="trabajo">
+        <xs:simpleType>
+          <xs:restriction base="xs:int">
+            <xs:enumeration value="022500105"/>
+            <xs:enumeration value="022650105"/>
+            <xs:enumeration value="022450105"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="principal">
+        <xs:simpleType>
+          <xs:restriction base="xs:int">
+            <xs:enumeration value="0995021739"/>
+            <xs:enumeration value="0991561739"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="fax">
+        <xs:simpleType>
+          <xs:restriction base="xs:long">
+            <xs:enumeration value="555666777888"/>
+            <xs:enumeration value="555666444888"/>
+            <xs:enumeration value="555666444999"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="localizacionType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="pais"/>
+      <xs:element type="xs:string" name="ciudad"/>
+      <xs:element name="geolocalizacion">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="223.255.129.10"/>
+            <xs:enumeration value="223.255.129.11"/>
+            <xs:enumeration value="223.255.129.12"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tonosType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="mensaje"/>
+      <xs:element type="xs:string" name="llamada"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="contactoType">
+    <xs:sequence>
+      <xs:element type="informacion-personalType" name="informacion-personal"/>
+      <xs:element type="empresaType" name="empresa"/>
+      <xs:element type="telefonoType" name="telefono"/>
+      <xs:element type="localizacionType" name="localizacion"/>
+      <xs:element type="tonosType" name="tonos"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="ContactosType">
+    <xs:sequence>
+      <xs:element type="contactoType" name="contacto" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="cine" type="cineType"/>
+  <xs:complexType name="directoresType">
+    <xs:sequence>
+      <xs:element name="director" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="
+            Clint Eastwood
+        "/>
+            <xs:enumeration value="
+            James Cameron
+        "/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="id"/>
+  </xs:complexType>
+  <xs:complexType name="peliculasType">
+    <xs:sequence>
+      <xs:element name="pelicula" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="
+            Avatar
+        "/>
+            <xs:enumeration value="
+            Mystic River
+        "/>
+            <xs:enumeration value="
+            Titanic
+        "/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cineType">
+    <xs:sequence>
+      <xs:element type="directoresType" name="directores"/>
+      <xs:element type="peliculasType" name="peliculas"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

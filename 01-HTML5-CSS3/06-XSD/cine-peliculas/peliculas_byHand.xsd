@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="cine">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="directores"/>
+                <xsd:element ref="peliculas"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="directores">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="director"/>
+            </xsd:sequence>
+            <xsd:attribute ref="id"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="peliculas">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="pelicula"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- TIPOS SIMPLES -->
+
+    <xsd:element name="director" type="xsd:string"/>
+    <xsd:attribute name="id" type="xsd:string"/>
+    <xsd:element name="pelicula" type="xsd:string"/>
+
+</xsd:schema>

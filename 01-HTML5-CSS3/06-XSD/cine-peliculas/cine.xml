@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="peliculas_byHand.xsd">
+    <directores id="1">
+        <director>
+            Clint Eastwood
+        </director>
+        <director>
+            James Cameron
+        </director>
+    </directores>
+    <peliculas>
+        <pelicula>
+            Avatar
+        </pelicula>
+        <pelicula>
+            Mystic River
+        </pelicula>
+        <pelicula>
+            Titanic
+        </pelicula>
+    </peliculas>
+</cine>
