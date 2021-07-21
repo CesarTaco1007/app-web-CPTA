@@ -90,4 +90,34 @@
             <llamada>alert</llamada>
         </tonos>
     </contacto>
+    <contacto id="3">
+        <informacion-personal>
+            <fotografia>foto3</fotografia>
+            <titulo>titulo3</titulo>
+            <nombre>Nombre3</nombre>
+            <apellido>Apellido3</apellido>
+            <url-pagina-personal>URL3</url-pagina-personal>
+            <fecha-cumpleaños>Fecha3</fecha-cumpleaños>
+        </informacion-personal>
+        <empresa>
+            <nombreEmpresa>Empresa3</nombreEmpresa>
+            <tipoEmpresa>Privada</tipoEmpresa>
+        </empresa>
+        <telefono>
+            <celular>0991231456</celular>
+            <casa>2812789</casa>
+            <trabajo>022450105</trabajo>
+            <principal>0991561739</principal>
+            <fax>555666444999</fax>
+        </telefono>
+        <localizacion>
+            <pais>Ecuador</pais>
+            <ciudad>Quito</ciudad>
+            <geolocalizacion>223.255.129.12</geolocalizacion>
+        </localizacion>
+        <tonos>
+            <mensaje>message</mensaje>
+            <llamada>alert</llamada>
+        </tonos>
+    </contacto>
 </Contactos>
