@@ -16,7 +16,6 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="titulo1"/>
-
             <xs:enumeration value="titulo2"/>
             <xs:enumeration value="titulo3"/>
           </xs:restriction>
@@ -85,7 +84,7 @@
     <xs:sequence>
       <xs:element name="celular">
         <xs:simpleType>
-          <xs:restriction base="xs:int">
+          <xs:restriction base="xs:string">
             <xs:enumeration value="0995021739"/>
             <xs:enumeration value="0991231739"/>
             <xs:enumeration value="0991231456"/>
@@ -94,7 +93,7 @@
       </xs:element>
       <xs:element name="casa">
         <xs:simpleType>
-          <xs:restriction base="xs:int">
+          <xs:restriction base="xs:string">
             <xs:enumeration value="2810596"/>
             <xs:enumeration value="2812596"/>
             <xs:enumeration value="2812789"/>
@@ -103,7 +102,7 @@
       </xs:element>
       <xs:element name="trabajo">
         <xs:simpleType>
-          <xs:restriction base="xs:int">
+          <xs:restriction base="xs:string">
             <xs:enumeration value="022500105"/>
             <xs:enumeration value="022650105"/>
             <xs:enumeration value="022450105"/>
@@ -112,7 +111,7 @@
       </xs:element>
       <xs:element name="principal">
         <xs:simpleType>
-          <xs:restriction base="xs:int">
+          <xs:restriction base="xs:string">
             <xs:enumeration value="0995021739"/>
             <xs:enumeration value="0991561739"/>
           </xs:restriction>
@@ -120,7 +119,7 @@
       </xs:element>
       <xs:element name="fax">
         <xs:simpleType>
-          <xs:restriction base="xs:long">
+          <xs:restriction base="xs:string">
             <xs:enumeration value="555666777888"/>
             <xs:enumeration value="555666444888"/>
             <xs:enumeration value="555666444999"/>
@@ -158,7 +157,7 @@
       <xs:element type="localizacionType" name="localizacion"/>
       <xs:element type="tonosType" name="tonos"/>
     </xs:sequence>
-    <xs:attribute type="xs:byte" name="id" use="optional"/>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
   </xs:complexType>
   <xs:complexType name="ContactosType">
     <xs:sequence>

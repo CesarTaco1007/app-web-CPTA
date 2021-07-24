@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Contactos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="contactos_byHand.xsd">
+<Contactos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="contactos.xsd">
 	<contacto id="1">
         <informacion-personal>
             <fotografia>foto1</fotografia>
