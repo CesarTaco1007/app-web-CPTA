@@ -1,6 +1,6 @@
 
 /*--------- SECCION 1 ---------------*/
-header{height:200px;background-image: url(../img/sombra_03.png);}
+header{height:200px;background-image: url(../../../03-Practica_HTML-CSS/img/sombra_03.png);}
 #enlaces{ width:100%;height: 50px;text-align: center;}
 #enlaces ul{list-style-type: none; text-align: center;margin:0;padding-top:15px;}
 #enlaces li{display: inline-block;width:20%;}
@@ -16,14 +16,14 @@ a{color:white; text-decoration: none;}
     font-family:pepito;
     font-style:normal;
     font-weight:normal;
-    src:url(../fonts/new_zelek_[allfont.es].ttf);
+    src:url(../../../03-Practica_HTML-CSS/fonts/new_zelek_[allfont.es].ttf);
 }
 
 @font-face{
     font-family:juanito;
     font-style:normal;
     font-weight:normal;
-    src:url(../fonts/futura-normal_[allfont.es].ttf);
+    src:url(../../../03-Practica_HTML-CSS/fonts/futura-normal_[allfont.es].ttf);
 }
 
 #logo{

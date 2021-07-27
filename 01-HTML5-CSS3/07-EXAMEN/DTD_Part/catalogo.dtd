@@ -1,0 +1,26 @@
+<!DOCTYPE CATALOG [
+        <!ELEMENT CATALOG (metadata|CDSTORES|CD)*>
+        <!ELEMENT metadata (bookstore|owner)*>
+        <!ELEMENT bookstore (#PCDATA)>
+        <!ELEMENT owner (#PCDATA)>
+        <!ATTLIST owner
+                prefix CDATA #REQUIRED>
+        <!ELEMENT CDSTORES (store)*>
+        <!ELEMENT store (name|geolocalization)*>
+        <!ATTLIST store
+                id CDATA #REQUIRED>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT geolocalization (latitude|longitude)*>
+        <!ELEMENT latitude (#PCDATA)>
+        <!ELEMENT longitude (#PCDATA)>
+        <!ELEMENT CD (TITLE|ARTIST|PRICE|YEAR|SPACE|STATUS|INVOICE)*>
+        <!ATTLIST CD
+                storeId CDATA #REQUIRED>
+        <!ELEMENT TITLE (#PCDATA)>
+        <!ELEMENT ARTIST (#PCDATA)>
+        <!ELEMENT PRICE (#PCDATA)>
+        <!ELEMENT YEAR (#PCDATA)>
+        <!ELEMENT SPACE (#PCDATA)>
+        <!ELEMENT STATUS (#PCDATA)>
+        <!ELEMENT INVOICE (#PCDATA)>
+        ]>

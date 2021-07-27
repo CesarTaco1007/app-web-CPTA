@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CATALOG SYSTEM "catalogo.dtd">
+<CATALOG>
+	<metadata>
+		<bookstore>CD SHOP</bookstore>
+		<owner prefix="Sr.">Richard Bernie</owner>
+	</metadata>
+	<CDSTORES>
+		<store id="ALB">
+			<name>Alabama</name>
+			<geolocalization>
+				<latitude>123123123</latitude>
+				<longitude>2312321233</longitude>
+			</geolocalization>
+		</store>
+		<store id="SDO">
+			<name>San Diego</name>
+			<geolocalization>
+				<latitude>-232321232.5454</latitude>
+				<longitude>88876465834</longitude>
+			</geolocalization>
+		</store>
+	</CDSTORES>
+	<CD storeId="ALB">
+		<TITLE>Empire Burlesque</TITLE>
+		<ARTIST>Bob Dylan</ARTIST>
+		<PRICE>10.90</PRICE>
+		<YEAR>1985</YEAR>
+		<SPACE />
+		<STATUS>active</STATUS>
+	</CD>
+	<CD storeId="SDO">
+		<TITLE>Hide your heart</TITLE>
+		<ARTIST>Bonnie Tyler</ARTIST>
+		<PRICE>9.90</PRICE>
+		<YEAR>1988</YEAR>
+		<INVOICE>123432</INVOICE>
+	</CD>
+</CATALOG>

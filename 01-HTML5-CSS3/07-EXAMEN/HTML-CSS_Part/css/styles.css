@@ -1,0 +1,120 @@
+header{
+    height: 70px;
+    background-color: #176FA6;
+}
+body{margin:auto;}
+@font-face{
+    font-family:monse;
+    font-style:normal;
+    font-weight:bold;
+    src:url(../../../07-EXAMEN/HTML-CSS_Part/fonts/Montserrat-Bold.otf);
+}
+@font-face{
+    font-family:display_light;
+    font-style:normal;
+    font-weight:normal;
+    src:url(../../../07-EXAMEN/HTML-CSS_Part/fonts/sf-ui-display-light.otf);
+}
+
+h2{
+    font-family: monse;
+    font-size: 70px;
+    text-align: center;
+    color: #176FA6;
+}
+h3{
+    font-family: monse;
+    font-size: 20px;
+}
+
+nav{
+    clear:both;
+    padding-top: 10px;
+}
+nav ul.menu{
+    list-style-type:none;
+    text-align: left;
+    color: white;
+}
+ul.menu li{
+    display: inline-block;
+    width: 10%;
+}
+ul.menu li a{
+    font-family: monse;
+    list-style-type:none;
+    text-decoration: none;
+    color:white;
+    display: block;
+}
+
+a:hover {
+    color: #fffb02;
+    background-color: #fffb02;
+}
+
+#imagen{
+    height:400px;
+    width:400px;
+    background-image: url(../../../07-EXAMEN/HTML-CSS_Part/img/investigador.jpg);
+    background-repeat: no-repeat;
+    background-position: 20%;
+    background-size: 100% auto;
+    margin:0px auto;
+    border-radius: 50%;
+}
+
+#izquierda{
+    float: left;
+    margin: 0px 0px 20px 100px;
+}
+
+#derecha{
+    float: right;
+}
+p{
+    line-height: 19px;
+    font-family: display_light;
+}
+
+#research-interest{
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    margin:auto;
+    padding-top:15px;
+}
+#research-interest li{
+    margin: auto;
+    display: inline-block;
+    width:45%;
+}
+
+#research-interest li a{
+    margin: auto;
+    font-family: monse;
+    list-style-type:none;
+    text-decoration: none;
+    color:black;
+    display: inline-block;
+}
+#research-interest li a:hover{
+    background-color: transparent;
+}
+
+section{
+    float: left;
+    margin: 1%;
+}
+
+.border{
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #176FA6;
+}
+#habilidades{
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
